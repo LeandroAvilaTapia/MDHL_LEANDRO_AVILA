@@ -42,8 +42,9 @@ body {
     display: inline-block;
     margin: 1rem;
     position: absolute;
-    top: 2rem;
+    top: 3rem;
     right: 12rem;
+    z-index: 1;
   }
   nav a {
     background-color: rgb(68, 114, 196);

@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background-color:#ffffff;
+  }
+.portada{
+   width: 80vw;
+   position: relative;
+   text-align: center;
+   left: 10vw;
+   display: block;
+}
+  header{
+    min-height: 70vh;
+  }
+  header h1 {
+    font-size: 50px;
+    color: rgb(194, 57, 57);
+    background-color: rgb(255, 255, 255);
+    display: block;
+    position: relative;    
+    text-align: center;
+    width: 80vw;
+    left: 10vw;
+    padding: 5px 0px 5px 15px;
+    
+  }
+  
+  header h2{
+    position: relative;
+    align-items: center;
+    color: rgb(194, 57, 57);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    height: 30px;    
+    width: 80vw;
+    left: 10vw;
+  }
+  nav {
+    background-color: #ffffff;
+    display: inline-block;
+    position: relative;    
+    width: 80vw;
+    height: 4vh;
+    margin-top: 1vh;
+    left: 10vw;
+    position: relative;
+    text-align: center;
+  }
+  nav a {    
+    display:inline-block;
+    padding: 0.2rem 0.5rem;
+    text-decoration: none;
+    border-radius: 20px;
+    color: rgb(194, 57, 57);    
+    border: 2px solid black;    
+    transition: all .5s;
+  }
+  nav a:hover{
+    background-color: rgb(112, 173, 71);
+    transform: scale(1.2);
+    margin: 0 10px;
+    color: #ffffff;
+    background-color: rgb(194, 57, 57);
+  }
+  main{    
+    background-color:#ffffff;
+    display: inline-block;
+    position: relative;
+    min-height: 22vh;
+    width: 80vw;
+    left: 10vw;
+  }
+  .logo{
+  position: fixed;
+  display:inline-block;
+  width: 9vw;
+  right: 12vw;
+  bottom: 25vh;
+  }
+  .contenedor{
+    display: inline-block;
+    width: 100%;
+    }
+    .contenedor h3{
+        border: 2px solid rgb(194, 57, 57);
+        transition: all .5s;
+        padding-left: 40px;
+        border-radius: 20px;
+       }
+    .contenedor p{        
+        transition: all .5s;
+       }
+   .contenedor h3:hover{
+    text-align: center;
+    color: #ffffff;
+    background-color: #4d9678;
+   }
+   header h2:hover{
+    background-color:rgb(194, 57, 57) ;
+    color:#ffffff ;
+   }
+  p{
+    margin-left: 10px;
+  }
+  #pContacto{
+    width: 80vh;
+  }
+  footer {
+    position: relative;
+    min-height: 4vh;
+    text-align: center;
+    align-items: end;
+    background-color: #fff467;        
+    width: 80vw;
+    left: 10vw;
+  }
+  footer p{
+    position: relative;
+    top: 1vh;
+  }
