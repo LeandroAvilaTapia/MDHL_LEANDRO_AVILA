@@ -5,29 +5,45 @@
 }
 body {
     min-height: 100vh;
-    background-color:rgb(168, 163, 163);
+    background-color:#4d9678;
   }
 .portada{
    width: 80vw;
-   position: absolute;
-   left: 12rem;
-   top: 6rem;
+   position: relative;
+   text-align: center;
+   left: 10vw;
+   display: block;
 }
-  
+  header{
+    min-height: 75vh;
+  }
   header h1 {
     font-size: 50px;
-    color: rgb(0, 0, 0);
-    display: inline-block;
-    position: absolute;
-    top: 1rem;
-    left: 12rem;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    display: block;
+    position: relative;    
+    width: 80vw;
+    left: 10vw;
+    padding-left: 15px;
+    
+  }
+  
+  header h2{
+    position: relative;
+    align-items: center;
+    background-color: rgb(194, 57, 57);
+    text-align: center;
+    height: 30px;    
+    width: 80vw;
+    left: 10vw;
   }
   nav {
     display: inline-block;
     margin: 1rem;
     position: absolute;
-    top: 4rem;
-    right: 10rem;
+    top: 2rem;
+    right: 12rem;
   }
   nav a {
     background-color: rgb(68, 114, 196);
@@ -39,25 +55,18 @@ body {
   nav a:hover{
     background-color: rgb(112, 173, 71);
   }
-  header h2{
-    position: absolute;
-    align-items: center;
-    background-color: rgb(194, 57, 57);
-    width: 80vw;
-    left: 12rem;
-    top: 73vh;
-    text-align: center;
-  }
   main{
     display: inline-block;
     position: relative;
+    min-height: 20vh;
     width: 80vw;
     left: 12rem;
-    top: 80vh;
   }
   .logo{
   position: relative;
-  width: 10%;  
+  width: 10%;
+  top: 0;
+  align-items: start;  
   }
   .contenedor{
     display: inline-block;
@@ -68,6 +77,16 @@ body {
   p{
     margin-left: 10px;
   }
-  #pContacto{
-    
+  footer {
+    position: relative;
+    min-height: 5vh;
+    text-align: center;
+    align-items: end;
+    background-color: #fff467;        
+    width: 80vw;
+    left: 10vw;
+  }
+  footer p{
+    position: relative;
+    top: 1.5vh;
   }
