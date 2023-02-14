@@ -5,121 +5,166 @@
 }
 body {
     min-height: 100vh;
-    background-color:#ffffff;
+    background-color:#b9a6a6;
+  }
+  .H2Portada{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
   }
 .portada{
    width: 80vw;
+   display: flex;
    position: relative;
-   text-align: center;
-   left: 10vw;
-   display: block;
+}  
+header h2{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  color: rgb(194, 57, 57);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  max-height: 40px;  
+  width: 80vw;
 }
-  header{
-    min-height: 70vh;
+
+header h2:hover{
+  background-color:rgb(194, 57, 57) ;
+  color:#ffffff ;
+ }
+
+  .headerH1Img{
+    display: flex;
+    height: 8vh;    
+    width: 80vw;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 3rem;
   }
   header h1 {
+    display: flex;
+    align-items: center;
     font-size: 50px;
     color: rgb(194, 57, 57);
     background-color: rgb(255, 255, 255);
-    display: block;
     position: relative;    
     text-align: center;
-    width: 80vw;
-    left: 10vw;
     padding: 5px 0px 5px 15px;
     
   }
-  
-  header h2{
+  .logo{
     position: relative;
-    align-items: center;
-    color: rgb(194, 57, 57);
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    height: 30px;    
-    width: 80vw;
-    left: 10vw;
-  }
+    max-height: 9vh;
+    display: flex;
+    align-items: flex-end;
+    }
   nav {
-    background-color: #ffffff;
-    display: inline-block;
-    position: relative;    
-    width: 80vw;
+    display: flex;
+    position: sticky;
+    top: 2vh;    
+    width: 100vw;
     height: 4vh;
-    margin-top: 1vh;
-    left: 10vw;
-    position: relative;
+    margin-top: 0;
+    margin-bottom: 1vh;
     text-align: center;
+    justify-content: center;
+    z-index: 2;
   }
   nav a {    
-    display:inline-block;
+    display:flex;
+    align-items: center;
+    background-color: #ffffff;
     padding: 0.2rem 0.5rem;
     text-decoration: none;
     border-radius: 20px;
     color: rgb(194, 57, 57);    
     border: 2px solid black;    
     transition: all .5s;
+    margin: 0 5px;
   }
   nav a:hover{
     background-color: rgb(112, 173, 71);
-    transform: scale(1.2);
-    margin: 0 10px;
+    transform: scale(1.3);
+    margin: 0 17px;
     color: #ffffff;
     background-color: rgb(194, 57, 57);
   }
-  main{    
+  .main{    
     background-color:#ffffff;
-    display: inline-block;
+    display: flex;
     position: relative;
-    min-height: 22vh;
-    width: 80vw;
-    left: 10vw;
+    justify-content: center;
+    min-height: 30vh;
   }
-  .logo{
-  position: fixed;
-  display:inline-block;
-  width: 9vw;
-  right: 12vw;
-  bottom: 25vh;
-  }
+  
   .contenedor{
-    display: inline-block;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
     }
-    .contenedor h3{
+  .contenedor h3{
         border: 2px solid rgb(194, 57, 57);
         transition: all .5s;
         padding-left: 40px;
         border-radius: 20px;
        }
-    .contenedor p{        
+  .contenedor p{        
         transition: all .5s;
        }
-   .contenedor h3:hover{
+  .contenedor h3:hover{
     text-align: center;
     color: #ffffff;
-    background-color: #4d9678;
+    background-color: #4d9678;    
+    padding-left: 0px;
    }
-   header h2:hover{
-    background-color:rgb(194, 57, 57) ;
-    color:#ffffff ;
-   }
-  p{
+  .p{
     margin-left: 10px;
   }
-  #pContacto{
-    width: 80vh;
-  }
   footer {
+    display: flex;
     position: relative;
     min-height: 4vh;
-    text-align: center;
-    align-items: end;
+    justify-content: center;
+    align-items: center;
     background-color: #fff467;        
-    width: 80vw;
-    left: 10vw;
+    width: 100vw;
   }
-  footer p{
+
+  .mainGame{
+    display: flex;
     position: relative;
-    top: 1vh;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  .mainGame div{        
+    width: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+    font-size: 20px;
+  }
+  .divPhoneEmail{
+    display: flex;
+    flex-direction: row !important;
+  }
+  table{
+    margin: 2rem;
+  }
+  th, td {
+    margin: 2rem;
+    border: 1px solid black;
+    padding: 1rem;
+  }
+  th{
+    background-color: #4d9678;
+  }
+  .fecha{
+    background-color: #fff467;
   }
