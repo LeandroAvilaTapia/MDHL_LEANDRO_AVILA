@@ -168,3 +168,18 @@ header h2:hover{
   .fecha{
     background-color: #fff467;
   }
+
+  .mainRules{    
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+  }
+  .mainRules div{
+    width: 80vw;
+  }
+  .liAllPlay{
+    list-style-type: circle;
+  }
+  
