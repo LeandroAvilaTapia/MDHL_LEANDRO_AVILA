@@ -5,7 +5,7 @@
 }
 body {
     min-height: 100vh;
-    background-color:#b9a6a6;
+    background-color:#ffffff;
   }
   .H2Portada{
   display: flex;
@@ -113,7 +113,7 @@ header h2:hover{
   .contenedor p{        
         transition: all .5s;
        }
-  .contenedor h3:hover{
+  .contenedor h3:hover,.efectoEncabezado:hover{
     text-align: center;
     color: #ffffff;
     background-color: #4d9678;    
@@ -121,6 +121,13 @@ header h2:hover{
    }
   .p{
     margin-left: 10px;
+  }
+  #pContacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    gap: 2rem;
   }
   footer {
     display: flex;
@@ -175,11 +182,42 @@ header h2:hover{
     flex-direction: column;
     align-items: center;
     margin: 2rem 0;
+    gap: 1rem;
+    height: 80vh;
+    font-size: 20px;
+    list-style-position: inside;
   }
   .mainRules div{
     width: 80vw;
   }
   .liAllPlay{
     list-style-type: circle;
+    margin-left: 2rem;
   }
-  
+  .Fila930{
+    background-color: rgb(228, 122, 122);
+  }
+
+  .encabezado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .encabezado h4{
+    font-size: 36px;
+  }
+/* 
+  dd{
+    padding-left: 15px;
+  } */
+
+.efectoEncabezado{
+        border: 2px solid rgb(194, 57, 57);
+        transition: all .5s;
+        padding-left: 10px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+}
+.ddPadding{
+  text-indent: 2rem;
+}
