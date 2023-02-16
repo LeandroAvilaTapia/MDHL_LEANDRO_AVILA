@@ -42,10 +42,13 @@ header h2:hover{
     align-items: flex-start;
     justify-content: space-evenly;
     gap: 3rem;
+    margin: 1px;
+    flex-wrap: nowrap;
   }
   header h1 {
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
     font-size: 50px;
     color: rgb(194, 57, 57);
     background-color: rgb(255, 255, 255);
@@ -105,7 +108,7 @@ header h2:hover{
     width: 80vw;
     gap: 10px;
     }
-  .contenedor h3{
+  .contenedor h3, .maps h4{
         border: 2px solid rgb(194, 57, 57);
         transition: all .5s;
         padding-left: 40px;
@@ -114,7 +117,7 @@ header h2:hover{
   .contenedor p{        
         transition: all .5s;
        }
-  .contenedor h3:hover,.efectoEncabezado:hover{
+  .contenedor h3:hover,.efectoEncabezado:hover, .maps h4:hover{
     text-align: center;
     color: #ffffff;
     background-color: #4d9678;    
@@ -185,7 +188,7 @@ header h2:hover{
     align-items: center;
     margin: 2rem 0;
     gap: 1rem;
-    height: 80vh;
+    min-height: 80vh;
     font-size: 20px;
     list-style-position: inside;
   }
@@ -208,10 +211,11 @@ header h2:hover{
   .encabezado h4{
     font-size: 36px;
   }
-/* 
-  dd{
-    padding-left: 15px;
-  } */
+  tbody td a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 2px #1fb14f8e;
+  }
 
 .efectoEncabezado{
         border: 2px solid rgb(194, 57, 57);
@@ -222,4 +226,30 @@ header h2:hover{
 }
 .ddPadding{
   text-indent: 2rem;
+}
+
+.maps{
+  display: flex !important;
+  position: relative;  
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  width: 75vw !important;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  
+}
+.maps div{
+  width: 25vw;
+  display: flex;
+  text-align: center;
+  font-size: 2rem;
+}
+.maps div iframe{
+  width: 25vw;
+  height: 22rem;
+  border-radius: 10%;
+}
+.maps h4{
+  padding-left: 0;
 }
