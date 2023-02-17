@@ -232,7 +232,7 @@ header h2:hover{
   display: flex !important;
   position: relative;  
   flex-direction: row !important;
-  flex-wrap: wrap;
+  flex-wrap: wrap !important;
   width: 75vw !important;
   justify-content: center;
   gap: 1rem;
@@ -242,8 +242,9 @@ header h2:hover{
 .maps div{
   width: 25vw;
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .maps div iframe{
   width: 25vw;
@@ -252,4 +253,72 @@ header h2:hover{
 }
 .maps h4{
   padding-left: 0;
+}
+
+.mainForm{
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 50vh;  
+  min-height: 50vh;
+  margin: 1rem 0;
+  ;
+}
+form{
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;  
+  width: 80vw;
+  background-color: #f2bf278c;
+  border-radius: 10px;
+}
+form h1{
+  display: flex;
+  height: 5vh;
+  align-items: center;
+  
+  position: relative;
+}
+fieldset{
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f275079d;
+  width: 80vw;  
+  justify-content: center;
+}
+form div{
+  margin: 10px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  font-size: 20px;
+  justify-content: space-evenly;
+}
+fieldset label{  
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  }
+  fieldset label input{
+    height: 100%;
+  }
+.mainForm h4{
+  display: flex;
+  font-size: 25px;
+  width: 100%;
+  justify-content: center;
+}
+.enviar{
+  padding: 0.5rem 1rem;
+  background-color: #d94032;
+  color: #F2F2F2;
+}
+input:required{
+  
+  border: 2px solid #000000;
 }
