@@ -228,33 +228,6 @@ header h2:hover{
   text-indent: 2rem;
 }
 
-.maps{
-  display: flex !important;
-  position: relative;  
-  flex-direction: row !important;
-  flex-wrap: wrap !important;
-  width: 75vw !important;
-  justify-content: center;
-  gap: 1rem;
-  margin: 1rem 0;
-  
-}
-.maps div{
-  width: 25vw;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  font-size: 1.5rem;
-}
-.maps div iframe{
-  width: 25vw;
-  height: 22rem;
-  border-radius: 10%;
-}
-.maps h4{
-  padding-left: 0;
-}
-
 .mainForm{
   display: flex;
   position: relative;
@@ -321,4 +294,44 @@ fieldset label, select{
 input:required{
   
   border: 2px solid #b61818;
+}
+
+#maps{
+  display: flex;
+  position: relative;  
+  flex-direction: row ;
+  flex-wrap: wrap;
+  width: 75vw;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  
+}
+.maps div{
+  width: 25vw;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.maps div iframe{
+  width: 25vw;
+  height: 22rem;
+  border-radius: 10%;
+}
+.maps h4{
+  padding-left: 0;
+}
+
+@media (max-width:1024px){
+#maps div{
+        width: 290px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+}
+#maps div h4,#maps div iframe{
+  width: 100%;
+}  
 }
