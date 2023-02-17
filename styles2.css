@@ -298,13 +298,13 @@ form div{
   font-size: 20px;
   justify-content: space-evenly;
 }
-fieldset label{  
+fieldset label, select{  
   margin: 10px;
   padding: 5px;
   border: 2px solid #ffffff;
   border-radius: 5px;
   }
-  fieldset label input{
+  fieldset label input, select option{
     height: 100%;
   }
 .mainForm h4{
@@ -320,5 +320,5 @@ fieldset label{
 }
 input:required{
   
-  border: 2px solid #000000;
+  border: 2px solid #b61818;
 }
